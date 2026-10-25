@@ -1,5 +1,6 @@
 const CONTATO = {
-  whatsapp: "",
+  whatsapp: "https://wa.me/message/ZNQ4MEJ4PSWUA1",
+  instagram: "https://www.instagram.com/zlootboxoficial/",
   email: "",
   github: "https://github.com/Emeer18"
 };
@@ -185,11 +186,16 @@ function iniciarContato() {
   const botoes = [];
 
   if (CONTATO.whatsapp) {
-    const numero = CONTATO.whatsapp.replace(/\D/g, "");
-    botoes.push({ texto: "WhatsApp", href: `https://wa.me/${numero}`, principal: true });
+    const href = CONTATO.whatsapp.startsWith("http")
+      ? CONTATO.whatsapp
+      : `https://wa.me/${CONTATO.whatsapp.replace(/\D/g, "")}`;
+    botoes.push({ texto: "WhatsApp", href, principal: true });
   }
   if (CONTATO.email) {
     botoes.push({ texto: "E-mail", href: `mailto:${CONTATO.email}`, principal: botoes.length === 0 });
+  }
+  if (CONTATO.instagram) {
+    botoes.push({ texto: "Instagram", href: CONTATO.instagram, principal: false });
   }
   if (CONTATO.github) {
     botoes.push({ texto: "GitHub", href: CONTATO.github, principal: false });
