@@ -236,7 +236,7 @@ h1, h2, h3, p, dl, dd { margin: 0; }
 }
 .contato::before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px); background-size: 44px 44px; mask-image: radial-gradient(circle at 50% 50%, #000, transparent 72%); -webkit-mask-image: radial-gradient(circle at 50% 50%, #000, transparent 72%); }
 .contato > * { position: relative; }
-.contato h2 { max-width: 640px; margin: 0 auto; }
+.contato h2 { max-width: none; margin: 0 auto; text-wrap: balance; }
 .contato > p:not(.secao__rotulo) { max-width: 480px; margin: 16px auto 0; color: var(--muted); font-size: 17px; }
 .contato__acoes { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 34px; }
 
