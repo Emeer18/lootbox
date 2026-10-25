@@ -106,6 +106,7 @@ h1, h2, h3, p, dl, dd { margin: 0; }
   letter-spacing: -0.03em;
 }
 .hero__sub { margin-top: 22px; max-width: 520px; font-size: 18px; color: var(--muted); }
+.hero__sub strong { color: var(--ink); font-weight: 600; letter-spacing: 0.04em; }
 .hero__acoes { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
 .hero__numeros { display: flex; flex-wrap: wrap; gap: 34px; margin-top: 52px; padding-top: 26px; border-top: 1px solid var(--linha); }
 .hero__numeros dt { font: 600 18px/1.2 var(--fonte-titulo); }
