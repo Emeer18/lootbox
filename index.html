@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LootBox | Software sob medida</title>
+  <meta name="description" content="Portfólio LootBox: aplicativos e sistemas sob medida para agendamento, vendas e produção. FlashSplash, Markett e TexFlow.">
+  <meta name="theme-color" content="#04060a">
+  <meta property="og:title" content="LootBox | Software sob medida">
+  <meta property="og:description" content="Aplicativos e sistemas que organizam a rotina do seu negócio.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="fundo" aria-hidden="true">
+    <div class="fundo__grade"></div>
+    <div class="fundo__brilho fundo__brilho--ciano"></div>
+    <div class="fundo__brilho fundo__brilho--magenta"></div>
+    <div class="fundo__cursor"></div>
+  </div>
+
+  <header class="topo" id="topo">
+    <a class="topo__marca" href="#inicio" aria-label="LootBox, início">
+      <img src="assets/logo.png" alt="LootBox" width="1326" height="236">
+    </a>
+    <nav class="topo__nav" aria-label="Seções">
+      <a href="#projetos">Projetos</a>
+      <a href="#tecnologias">Tecnologias</a>
+      <a href="#processo">Processo</a>
+      <a href="#contato" class="botao botao--pequeno">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero__texto">
+        <p class="selo rv"><span class="selo__ponto"></span> Desenvolvimento de software</p>
+        <h1 class="hero__titulo rv" style="--i:1">
+          Software sob medida para a <span class="glitch" data-texto="rotina">rotina</span> do seu negócio.
+        </h1>
+        <p class="hero__sub rv" style="--i:2">
+          Apps e sistemas que tiram o trabalho do papel e colocam no ar, rápido.
+        </p>
+        <div class="hero__acoes rv" style="--i:3">
+          <a class="botao" href="#projetos">Ver projetos</a>
+          <a class="botao botao--vazado" href="#contato">Conversar</a>
+        </div>
+        <dl class="hero__numeros rv" style="--i:4">
+          <div><dt>3</dt><dd>produtos prontos</dd></div>
+          <div><dt>App + API</dt><dd>mobile e servidor</dd></div>
+          <div><dt>Multiempresa</dt><dd>dados separados por cliente</dd></div>
+        </dl>
+      </div>
+      <div class="hero__palco rv" style="--i:2">
+        <div class="palco palco--hero" data-palco="hero" aria-label="Telas dos aplicativos"></div>
+      </div>
+      <a class="hero__rolar" href="#projetos" aria-label="Rolar para os projetos"><span></span></a>
+    </section>
+
+    <section class="faixa" aria-label="Tecnologias usadas">
+      <div class="faixa__trilho">
+        <ul class="faixa__lista" id="faixa"></ul>
+      </div>
+    </section>
+
+    <section class="secao" id="projetos">
+      <header class="secao__cab rv">
+        <p class="secao__rotulo">Projetos</p>
+        <h2>O que já construí.</h2>
+        <p>Cada um resolve um problema real da rotina.</p>
+      </header>
+
+      <article class="projeto" id="flashsplash">
+        <div class="projeto__texto rv">
+          <p class="projeto__tag">Agendamento · Estética automotiva</p>
+          <h3>FlashSplash</h3>
+          <p class="projeto__resumo">Agenda online para estéticas automotivas e lavações.</p>
+          <div class="pblocos">
+            <div class="pbloco"><span>Problema</span><p>Horário combinado por mensagem vira conflito e esquecimento.</p></div>
+            <div class="pbloco pbloco--solucao"><span>Solução</span><p>O cliente agenda pelo celular e a equipe vê o dia inteiro num lugar só.</p></div>
+          </div>
+          <ul class="projeto__lista">
+            <li>Agenda do dia e novos agendamentos</li>
+            <li>Serviços, preços e equipe</li>
+            <li>Link por código para o cliente agendar</li>
+          </ul>
+          <ul class="chips"><li>Flutter</li><li>Spring Boot</li><li>PostgreSQL</li><li>JWT</li></ul>
+        </div>
+        <div class="projeto__palco rv" style="--i:1">
+          <div class="palco" data-palco="flashsplash" aria-label="Telas do FlashSplash"></div>
+        </div>
+      </article>
+
+      <article class="projeto projeto--inverso" id="markett">
+        <div class="projeto__texto rv">
+          <p class="projeto__tag">Comércio · Compra e venda</p>
+          <h3>Markett</h3>
+          <p class="projeto__resumo">Compra e venda de produtos direto no celular.</p>
+          <div class="pblocos">
+            <div class="pbloco"><span>Problema</span><p>Vender em grupos e conversas soltas não tem vitrine nem histórico.</p></div>
+            <div class="pbloco pbloco--solucao"><span>Solução</span><p>Anúncios com fotos, categorias e chat, tudo organizado no app.</p></div>
+          </div>
+          <ul class="projeto__lista">
+            <li>Vitrine com categorias e fotos</li>
+            <li>Conversa direta entre comprador e vendedor</li>
+            <li>Painel para acompanhar a loja</li>
+          </ul>
+          <ul class="chips"><li>Flutter</li><li>Spring Boot</li><li>PostgreSQL</li><li>Android</li></ul>
+          <a class="botao botao--pequeno projeto__acao" href="https://play.google.com/store/apps/details?id=com.marketapp.app&amp;hl=pt_BR" target="_blank" rel="noopener">Ver na Google Play</a>
+        </div>
+        <div class="projeto__palco rv" style="--i:1">
+          <div class="palco" data-palco="markett" aria-label="Telas do Markett"></div>
+        </div>
+      </article>
+
+      <article class="projeto" id="texflow">
+        <div class="projeto__texto rv">
+          <p class="projeto__tag">Produção · Malharias</p>
+          <h3>TexFlow</h3>
+          <p class="projeto__resumo">Controle de produção para malharias, do pedido ao fechamento.</p>
+          <div class="pblocos">
+            <div class="pbloco"><span>Problema</span><p>Pedido, etapa e produção de cada pessoa no papel e na planilha. O acerto vira conta de cabeça.</p></div>
+            <div class="pbloco pbloco--solucao"><span>Solução</span><p>Etapas, responsáveis, cores e tamanhos num fluxo só. O fechamento já calcula o repasse de cada um.</p></div>
+          </div>
+          <ul class="projeto__lista">
+            <li>Vários responsáveis por etapa</li>
+            <li>Cores e tamanhos, com peças por pessoa</li>
+            <li>Fechamento e relatórios do mês</li>
+          </ul>
+          <ul class="chips"><li>Flutter</li><li>Spring Boot</li><li>PostgreSQL</li><li>Render</li></ul>
+          <p class="parceria">Desenvolvido em parceria com <a href="https://github.com/lucas-portella" target="_blank" rel="noopener">Lucas Portella</a></p>
+        </div>
+        <div class="projeto__palco rv" style="--i:1">
+          <div class="palco" data-palco="texflow" aria-label="Telas do TexFlow"></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="secao" id="tecnologias">
+      <header class="secao__cab rv">
+        <p class="secao__rotulo">Tecnologias</p>
+        <h2>Do app ao servidor.</h2>
+      </header>
+      <div class="grade-tec">
+        <article class="cartao rv">
+          <span class="cartao__icone">01</span>
+          <h3>Aplicativos</h3>
+          <p>Flutter e Dart. Um código só, Android e web.</p>
+        </article>
+        <article class="cartao rv" style="--i:1">
+          <span class="cartao__icone">02</span>
+          <h3>Servidor e API</h3>
+          <p>Java 21 e Spring Boot, com login seguro e testes automatizados.</p>
+        </article>
+        <article class="cartao rv" style="--i:2">
+          <span class="cartao__icone">03</span>
+          <h3>Dados</h3>
+          <p>PostgreSQL, com os dados separados por empresa.</p>
+        </article>
+        <article class="cartao rv" style="--i:3">
+          <span class="cartao__icone">04</span>
+          <h3>Publicação</h3>
+          <p>Deploy na nuvem, versões assinadas e atualização contínua.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao" id="processo">
+      <header class="secao__cab rv">
+        <p class="secao__rotulo">Processo</p>
+        <h2>Do contato ao app no ar.</h2>
+      </header>
+      <ol class="passos">
+        <li class="rv"><span>01</span><h3>Conversa</h3><p>Entendo sua rotina e onde o trabalho trava.</p></li>
+        <li class="rv" style="--i:1"><span>02</span><h3>Desenho</h3><p>Telas e regras definidas antes do código.</p></li>
+        <li class="rv" style="--i:2"><span>03</span><h3>Entrega</h3><p>Versões curtas, testadas e usadas de verdade.</p></li>
+        <li class="rv" style="--i:3"><span>04</span><h3>Evolução</h3><p>App no ar e ajustes conforme o uso.</p></li>
+      </ol>
+    </section>
+
+    <section class="secao secao--contato" id="contato">
+      <div class="contato rv">
+        <p class="secao__rotulo">Contato</p>
+        <h2>Conta como funciona o seu negócio.</h2>
+        <p>Numa conversa já dá pra ver o que automatizar e por onde começar.</p>
+        <div class="contato__acoes" id="contato-acoes"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <img src="assets/logo.png" alt="LootBox" width="1326" height="236">
+    <p>© <span id="ano"></span> LootBox. Software sob medida.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
